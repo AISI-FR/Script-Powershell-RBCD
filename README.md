@@ -2,6 +2,8 @@
 
 Ce script PowerShell permet d'ajouter une règle Deny sur l'attribut msDs-AllowedToActOnBehalfOfOtherIdentity pour SELF, empêchant ainsi les ordinateurs de définir une délégation RBCD sur eux-mêmes.
 
+L'article détaillant l'utilisation de ce script est consultable ici : !FIXME_URL!
+
 ### ⚙️ Utilisation du script
 
 #### > Appliquer la restriction sur le container par défaut "Computers":
