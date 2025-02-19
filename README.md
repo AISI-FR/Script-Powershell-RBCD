@@ -1,11 +1,10 @@
-# Script-Powershell
-Ensemble de script powershell
+# 📜 Script PowerShell
 
-### Utilisation
+Ce script PowerShell permet d'ajouter une règle Deny sur l'attribut msDs-AllowedToActOnBehalfOfOtherIdentity pour SELF, empêchant ainsi les ordinateurs de définir une délégation RBCD sur eux-mêmes.
 
-#### Script remed_RBCD.ps1
+### ⚙️ Utilisation du script
 
-Appliquer le script sur le Common-Name "Computers":
+#### > Appliquer la restriction sur le containerpar défaut "Computers":
 ``` 
 PS C:\Users\AISI\Desktop> .\remed_RBCD.ps1 -TargetDN "CN=Computers,DC=aisi,DC=local"
 
@@ -15,7 +14,7 @@ OK : La règle Deny a été ajoutée avec succès pour SELF sur 'msDs-AllowedToA
 Fin du script.
 ```
 
-Appliquer le script sur une unité d’organisation "testOU":
+#### > Appliquer la restriction sur une Unité d’Organisation (OU)
 ```
 PS C:\Users\AISI\Desktop> .\remed_RBCD.ps1 -TargetDN "OU=testOU,DC=aisi,DC=local"
 Objet cible à modifier : OU=testOU,DC=aisi,DC=local
