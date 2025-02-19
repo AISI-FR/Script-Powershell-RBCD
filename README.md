@@ -29,7 +29,8 @@ Fin du script.
 Si vous souhaitez simuler l’exécution du script sans appliquer les modifications :
 
 ```
-PS C:\Users\AISI\Desktop> .\remed_RBCD.ps.\remed_RBCD.ps1 -TargetDN "CN=Computers,DC=aisi,DC=local" -whatif
+PS C:\Users\AISI\Desktop> .\remed_RBCD.ps.\remed_RBCD.ps1 -TargetDN "CN=Computers,DC=aisi,DC=local" -WhatIf
+
 Objet cible à modifier : CN=Computers,DC=aisi,DC=local
 [WhatIf] Voici la règle qui SERAIT ajoutée, sans appliquer :
 --------------------------------------------------------------
