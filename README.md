@@ -24,7 +24,7 @@ OK : La règle Deny a été ajoutée avec succès pour SELF sur 'msDs-AllowedToA
 Fin du script.
 ```
 
-### Tester le script avant l'application (WhatIf)
+### 🛠 Tester le script avant l'application (WhatIf)
 
 Si vous souhaitez simuler l’exécution du script sans appliquer les modifications :
 
