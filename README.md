@@ -8,7 +8,7 @@ L'article détaillant l'utilisation de ce script est consultable ici : !FIXME_UR
 
 #### > Appliquer la restriction sur le container par défaut "Computers":
 ``` 
-PS C:\Users\AISI\Desktop> .\remed_RBCD.ps1 -TargetDN "CN=Computers,DC=aisi,DC=local"
+PS > .\remed_RBCD.ps1 -TargetDN "CN=Computers,DC=aisi,DC=local"
 
 Objet cible à modifier : CN=Computers,DC=aisi,DC=local
 Application de la nouvelle règle (Set-Acl)...
@@ -18,7 +18,7 @@ Fin du script.
 
 #### > Appliquer la restriction sur une Unité d’Organisation (OU)
 ```
-PS C:\Users\AISI\Desktop> .\remed_RBCD.ps1 -TargetDN "OU=testOU,DC=aisi,DC=local"
+PS > .\remed_RBCD.ps1 -TargetDN "OU=testOU,DC=aisi,DC=local"
 
 Objet cible à modifier : OU=testOU,DC=aisi,DC=local
 Application de la nouvelle règle (Set-Acl)...
@@ -31,7 +31,7 @@ Fin du script.
 Si vous souhaitez simuler l’exécution du script sans appliquer les modifications :
 
 ```
-PS C:\Users\AISI\Desktop> .\remed_RBCD.ps.\remed_RBCD.ps1 -TargetDN "CN=Computers,DC=aisi,DC=local" -WhatIf
+PS > .\remed_RBCD.ps.\remed_RBCD.ps1 -TargetDN "CN=Computers,DC=aisi,DC=local" -WhatIf
 
 Objet cible à modifier : CN=Computers,DC=aisi,DC=local
 [WhatIf] Voici la règle qui SERAIT ajoutée, sans appliquer :
@@ -47,3 +47,17 @@ Objet cible à modifier : CN=Computers,DC=aisi,DC=local
 [WhatIf] Aucune modification n'est réellement appliquée.
 Fin du script.
 ```
+
+### ℹ️ Information
+
+Le rapport contient pour chaque objet :
+
+Identité :
+Pour les utilisateurs : UserPrincipalName et DN.
+Pour les ordinateurs : Name et DN.
+
+Entrées KeyCredentialLink :
+Source (ex. AD ou Entra)
+Usage (ex. NGC, FIDO, ou FEK)
+DeviceID
+KeyID
