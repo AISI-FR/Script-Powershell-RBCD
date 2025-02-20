@@ -6,7 +6,7 @@ L'article détaillant l'utilisation de ce script est consultable ici : !FIXME_UR
 
 ### ⚙️ Utilisation du script
 
-#### > Appliquer la restriction sur le container par défaut "Computers":
+#### Appliquer la restriction sur le container par défaut "Computers":
 ``` 
 PS > .\remed_RBCD.ps1 -TargetDN "CN=Computers,DC=aisi,DC=local"
 
@@ -16,7 +16,7 @@ OK : La règle Deny a été ajoutée avec succès pour SELF sur 'msDs-AllowedToA
 Fin du script.
 ```
 
-#### > Appliquer la restriction sur une Unité d’Organisation (OU)
+#### Appliquer la restriction sur une Unité d’Organisation (OU)
 ```
 PS > .\remed_RBCD.ps1 -TargetDN "OU=testOU,DC=aisi,DC=local"
 
